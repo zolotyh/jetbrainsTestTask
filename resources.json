@@ -1,0 +1,12 @@
+{
+  "js": {
+    "external": [
+      "bower_components/jquery/dist/jquery.js",
+      "bower_components/bootstrap/dist/js/bootstrap.js",
+      {
+        "src": "bower_components/holderjs/src/holder.js",
+        "min": "bower_components/holderjs/holder.js"
+      }
+    ]
+  }
+}
