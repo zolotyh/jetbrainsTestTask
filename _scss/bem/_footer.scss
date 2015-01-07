@@ -8,6 +8,7 @@
 
   &__left {
     @include span-columns(8);
+    font-family: $myriadHackFontFamily;
   }
   &__right {
     @include span-columns(4);
