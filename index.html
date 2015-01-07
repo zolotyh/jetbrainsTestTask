@@ -1,13 +1,254 @@
----
-layout: default
-title: Your New Jekyll Site
----
-
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Your New Jekyll Site</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="../js/modernizr.js"></script>
+</head>
+<body>
+<div class="layout">
+  <div class="top-menu">
+  <div class="container">
+    <div class="top-menu__logo">
+      <a href="https://www.jetbrains.com">
+        <img src="assets/images/jb.svg" alt=""/>
+        <span>
+        JetBrains
+        </span>
+      </a>
+    </div>
+    <ul class="top-menu__list">
+      <li><a href="">TeamCity</a></li>
+      <li><a href="">YouTrack</a></li>
+      <li><a href="">Confluence</a></li>
+    </ul>
+  </div>
 </div>
+
+  <header class="header">
+  <div class="container">
+    <a class="header__logo" href="">
+      <img src="/assets/images/logo.svg" alt=""/>
+    </a>
+
+    <h1 class="header__title">.NET Developer Productivity Booster</h1>
+
+    <h2 class="header__desc">The legendary extension to Microsoft Visual Studio</h2>
+  </div>
+</header>
+
+  <section class="jumbotron">
+  <div class="jumbotron__wrapper">
+    <div class="jumbotron__left">
+      <h3 class="jumbotron__title">
+        Why ReSharper is awesome?
+      </h3>
+      <button class="jumbotron__button"></button>
+    </div>
+    <div class="jumbotron__right">
+      <div class="jumbotron__desc">
+        Join 250,000+ .NET developers
+        all over the world and try
+        the latest ReSharper now!
+      </div>
+      <div class="jumbotron__button-wrapper">
+        <button class="button">
+          Get ReSharper 8 Now
+        </button>
+        <p class="jumbotron__button-desc">
+          Free 30-day trial (51.4 Mb)
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <seaction class="advantages">
+  <article class="advantages__item">
+    <div class="advantages__icon">
+      <img src="../assets/images/rocket.svg" alt="rocket"/>
+    </div>
+    <h3 class="advantages__item-title">
+      R# Gets You Rockin'
+    </h3>
+
+    <p class="advantages__item-desc">
+      ReSharper users report a 20-50% productivity increase — with some individual gains of up to 350%.
+    </p>
+  </article>
+  <article class="advantages__item">
+    <div class="advantages__icon">
+      <img src="../assets/images/flower.svg" alt="flower"/>
+    </div>
+    <h3 class="advantages__item-title">
+      R# Makes Your Code Beautiful
+    </h3>
+
+    <p class="advantages__item-desc">
+      ReSharper's powerful code analysis and transformation features help you produce high-quality code with no
+      additional effort.
+    </p>
+  </article>
+  <article class="advantages__item">
+    <div class="advantages__icon">
+      <img src="../assets/images/volant.svg" alt="volant"/>
+    </div>
+    <h3 class="advantages__item-title">
+      R# is Fun and Easy
+    </h3>
+    <p class="advantages__item-desc">
+      ReSharper seamlessly integrates with Visual Studio, turning it into an IDE you've always wished for:
+      easy-to-use, intelligent, unobtrusive.
+    </p>
+  </article>
+</seaction>
+
+  <section class="content">
+  <div class="content__wrapper">
+    <div class="content__row">
+      <div class="content__quote-wrapper">
+        <div class="content__quote">
+          It speeds up coding to such an extent that it feels awkward and slow when it's not available. Its
+          implementation
+          is subtle, but masterful. Among other things, it improves the auto-complete features, adds real time error
+          spotting and automatically adds the correct references.
+        </div>
+        <p class="content__quote-author">
+          Ben Franklin
+          <br/>
+          Senior Developer at Quba
+        </p>
+      </div>
+      <article class="content__features">
+        <ul class="feature-list__left">
+  <li class="feature-list__item">
+    <h4>
+      <img src="../assets/images/compass.svg" alt=""/>
+      Blazing fast navigation and search</h4>
+
+    <p>Instantly traverse your entire solution: jump to any file, type, or type member in no time, or navigate
+      from a specific symbol to its usages, base and derived symbols, or implementations. </p>
+  </li>
+  <li class="feature-list__item">
+    <h4>
+      <img src="../assets/images/pyramid.svg" alt=""/>
+      Automated solution-wide refactorings</h4>
+    <p>
+      Improve your code readability and maintainability in the most save and intelligent way. And do it with ease:
+      each of ReSharper's 49 refactorings can be invoked as a context action right from the editor
+    </p>
+  </li>
+  <li class="feature-list__item">
+    <h4>
+      <img src="../assets/images/lamp.svg" alt=""/>
+      On-the-fly code quality analysis and fixes
+    </h4>
+
+    <p>
+      Not only does ReSharper warn you when there's errors or smells in your code but it provides quick-fixes to
+      solve them automatically.
+    </p>
+  </li>
+</ul>
+<ul class="feature-list__right">
+  <li class="feature-list__item">
+    <h4>
+      <img src="../assets/images/codegen.svg" alt=""/>
+      Code generation</h4>
+
+    <p>You don't have to write properties, overloads, implementations, and comparers by hand: use code generation
+      actions to handle boilerplate code faster.</p>
+  </li>
+  <li class="feature-list__item">
+    <h4>
+      <img src="../assets/images/hammer.svg" alt=""/>
+      Code editing helpers</h4>
+    <p>A vast number of code editing helpers including extended IntelliSense, hundreds of instant code
+      transformations, auto- importing namespaces, rearranging code and displaying documentation.</p>
+  </li>
+  <li class="feature-list__item">
+    <h4>
+      <img src="../assets/images/compliance.svg" alt=""/>
+      Compliance to coding standards</h4>
+    <p>Remove redundant code and apply team coding conventions.</p>
+  </li>
+  <li class="feature-list__item">
+    <h4>
+      <img src="../assets/images/features.svg" alt=""/>
+      More features</h4>
+    <p>Including extensible code templates, internationalization assistance, and a powerful unit test runner.</p>
+  </li>
+</ul>
+
+      </article>
+    </div>
+    <p class="content__warning">
+      WARNING! Prolonged use may cause addiction.
+    </p>
+  </div>
+  <div class="content__more-button">
+    <span>
+      Click to find out more
+    </span>
+    <img src="../assets/images/open.svg" alt=""/>
+  </div>
+</section>
+
+  <div class="pre-footer">
+  <div class="pre-footer__left">
+    <h3 class="pre-footer__title">
+      Become a part of a vibrant community
+      Join thousands of happy ReSharper users worldwide!
+    </h3>
+    <ul class="pre-footer__link-list">
+      <li>
+        <img src="../assets/images/youtube.svg" height="18px" alt=""/>
+        Videos
+      </li>
+      <li>
+        <img src="../assets/images/twitter.svg" height="18px" alt=""/>
+        Twitter
+      </li>
+      <li>
+        <img src="../assets/images/comment.svg" height="18px" alt=""/>
+        Blog
+      </li>
+    </ul>
+  </div>
+  <div class="pre-footer__right">
+    <div class="pre-footer__button-wrapper">
+      <button class="button">
+        Get ReSharper 8 Now
+      </button>
+      <p class="pre-footer__button-desc">
+        Free 30-day trial (51.4 Mb)
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__left">
+      &copy; 2000-2014 JetBrains. All rights reserved
+    </div>
+    <div class="footer__right">
+      <img src="../assets/images/jetbrains_logo.svg" alt=""/>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="cover">
+  <a class="cover__link" href="http://browsehappy.com/">Using an outdated browser makes your computer unsafe. Browse Happy is a way for you to find out what are the latest versions of the major browsers around. You can also learn about alternative browsers that may fit you even better than the one you are currently using.</a>
+</div>
+
+</body>
+</html>
+
+
