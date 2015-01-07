@@ -12,7 +12,7 @@ var csso = require('gulp-csso');
 
 var deploy = require("gulp-gh-pages");
 
-gulp.task("deploy", ["jekyll-build"], function () {
+gulp.task("deploy", ["sass","jekyll-build"], function () {
   return gulp.src("./_site/**/*")
     .pipe(deploy());
 });

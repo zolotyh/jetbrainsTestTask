@@ -2,6 +2,7 @@ _site
 .idea
 node_modules
 # Created by https://www.gitignore.io
+.tmp
 
 ### Node ###
 # Logs
