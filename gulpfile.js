@@ -6,26 +6,24 @@ var cp          = require('child_process');
 var gulpFilter  = require('gulp-filter');
 var uglify      = require('gulp-uglify');
 var concat      = require('gulp-concat');
-var addsrc      = require('gulp-add-src');
-var rev         = require('gulp-rev');
 var rimraf = require('rimraf');
 var cssimport = require("gulp-cssimport");
 var csso = require('gulp-csso');
+
+var deploy = require("gulp-gh-pages");
+
+gulp.task("deploy", ["jekyll-build"], function () {
+  return gulp.src("./_site/**/*")
+    .pipe(deploy());
+});
 
 var options = {
     extensions: ["css"] // process only css
 };
 
-var filter = gulpFilter('**/*.js', '!**/*.min.js');
 
 var includes = require('./resources.json');
 
-var externalJsSrc = includes.js.external.map(function (path) {
-    if (typeof path === 'object') {
-        return path.src;
-    }
-    return path;
-});
 
 var externalJsMin = includes.js.external.map(function (path) {
     if (typeof path === 'object') {
@@ -79,8 +77,8 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(cssimport(options))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        //.pipe(csso(true))
+        .pipe(prefix(['last 15 versions', '> 3%'], { cascade: true }))
+        .pipe(csso(true))
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));

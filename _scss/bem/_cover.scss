@@ -1,0 +1,22 @@
+.no-svg, .no-inlinesvg, .no-ccstransforms {
+  .cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #653652;
+    z-index: 99999;
+    padding: 50px;
+    top: 0;
+    left: 0;
+    display: block;
+
+    &__link {
+      font-size: 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+.cover {
+  display: none;
+}

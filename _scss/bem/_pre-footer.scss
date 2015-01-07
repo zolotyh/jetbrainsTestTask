@@ -1,0 +1,49 @@
+.pre-footer {
+  @include outer-container();
+  padding-top: 37px;
+  padding-bottom: 14px;
+
+  &__left {
+    @include span-columns(8);
+  }
+  &__right {
+    @include span-columns(4);
+  }
+  &__title {
+    font-size: 29px;
+    font-family: $myriadHackFontFamily;
+    font-weight: 500;
+    color: #000000;
+    line-height: 35px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link-list {
+    margin: 17px 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    vertical-align: top;
+
+    & > li {
+      display: inline-block;
+      font-size: 13px;
+      margin-right: 41px;
+    }
+    & > li > img {
+      vertical-align: top;
+    }
+  }
+
+  &__button-wrapper {
+    display: inline-block;
+  }
+
+  &__button-desc {
+    font-style: italic;
+    font-size: 15px;
+    color: #232323;
+    text-align: center;
+  }
+}

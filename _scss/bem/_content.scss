@@ -1,0 +1,114 @@
+.content {
+  background-color: #d7d0c6;
+  color: #222222;
+  display: block;
+  padding: 41px 0 0;
+  position: relative;
+
+  &__more-button {
+    position: absolute;
+    background: #D7D0C6;
+    border-radius: 30px;
+    width: 172px;
+    height: 41px;
+    left: 50%;
+    margin-left: -86px;
+    bottom: -14px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      & > span {
+        border: none;
+      }
+    }
+
+    & > span {
+      border-bottom: 1px dashed #000;
+      font-size: 13px;
+      color: #000000;
+      line-height: 14px;
+      display: inline-block;
+    }
+
+    & > img {
+      display: block;
+      margin: 5px auto;
+    }
+  }
+
+  &__wrapper {
+    @include outer-container;
+    position: relative;
+  }
+
+  &__row {
+    @include row();
+  }
+
+  &__warning {
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0 0 6px;
+    @include span-columns(4);
+    position: absolute;
+    bottom: 0;
+
+    &:after {
+      content: '';
+      background: url(../../assets/images/man.svg) no-repeat top left;
+      width: 19px;
+      height: 20px;
+      display: inline-block;
+      margin: 0 0 0 -13px;
+      position: relative;
+      top: -3px;
+    }
+  }
+
+  &__quote {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #6b6357;
+    line-height: 33px;
+    position: relative;
+    margin-top: -4px;
+
+    &:after {
+      content: '”';
+      position: absolute;
+      bottom: -34px;
+      margin-left: -8px;
+    }
+
+    &:before {
+      content: '“';
+      left: -51px;
+      top: 19px;
+      position: absolute;
+    }
+
+    &:after, &:before {
+      color: #f4f0e9;
+      font-size: 130px;
+      font-style: normal;
+    }
+
+  }
+
+  &__quote-wrapper {
+    @include span-columns(4);
+  }
+
+  &__quote-author {
+    font-size: 15px;
+    margin: 21px 0 0;
+    color: #222222;
+  }
+
+  &__features {
+    @include span-columns(8);
+    display: block;
+  }
+}

@@ -1,0 +1,16 @@
+.footer {
+  &__wrapper {
+    @include outer-container();
+  }
+  padding: 18px 0 12px;
+  background: #272727;
+  color: #b8b8b8;
+
+  &__left {
+    @include span-columns(8);
+  }
+  &__right {
+    @include span-columns(4);
+    text-align: right;
+  }
+}

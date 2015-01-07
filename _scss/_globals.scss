@@ -1,0 +1,14 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial;
+}
+
+.no-svg, .no-inlinesvg, .no-ccstransforms {
+  body {
+    overflow: hidden;
+  }
+}
+

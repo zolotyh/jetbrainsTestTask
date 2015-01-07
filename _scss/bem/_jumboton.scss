@@ -1,0 +1,84 @@
+.jumbotron {
+  @include linear-gradient(90deg, transparent 25%, rgba(255, 255, 255, .01) 50%);
+  background-color: #222222;
+  background-size: 20px 50px;
+  box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.50);
+  z-index: 1;
+
+  &__wrapper {
+    @include outer-container;
+    position: relative;
+    height: 381px;
+    z-index: 1;
+    padding: 48px 0 0;
+
+  }
+
+  &__left {
+    @include span-columns(8);
+    position: relative;
+    min-height: 100%;
+
+    .jumbotron__img {
+      position: absolute;
+      max-width: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  &__right {
+    @include span-columns(4);
+  }
+
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    line-height: 1.2;
+    font-family: $myriadHackFontFamily;
+    margin-top: 119px;
+    font-weight: 300;
+    margin-bottom: 27px;
+  }
+
+  &__button {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-image: url(../../assets/images/play_button.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border: none;
+    background-color: transparent;
+    margin: 0 auto;
+    opacity: 0.4;
+    @include transition(opacity linear 0.3s);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__desc {
+    font-size: 24px;
+    color: #fff;
+    line-height: 36px;
+    margin: 38px 0 41px;
+    font-weight: 300;
+  }
+
+  &__button-wrapper {
+    display: inline-block;
+  }
+  &__button-desc {
+    font-size: 15px;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+  }
+
+}
+
+

@@ -1,20 +1,20 @@
 {
-  "name": "smartd",
+  "name": "jetbrainsTestTask",
   "version": "0.1",
+  "homepage": "https://github.com/zolotyh/jetbrainsTestTask",
   "authors": [
     "Alex Zolotyh <aazolotyh@gmail.com>"
   ],
-  "description": "universall theme portfolio",
-  "main": "gulpfile",
+  "description": "Jetbrains test task",
+  "main": "gulpfile.js",
   "moduleType": [
-    "es6"
+    "globals"
   ],
   "keywords": [
-    "portfolio",
-    "theme"
+    "test",
+    "task"
   ],
-  "license": "Commercial",
-  "homepage": "petale.io",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -23,10 +23,11 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass-official": "~3.3.1",
-    "bourbon": "~3.2.3",
-    "typicons": "~2.0.6",
-    "bootstrap": "~3.3.1",
-    "holderjs": "~2.4.1"
+    "bourbon": "~3.2.0",
+    "neat": "~1.7.0",
+    "normalize-scss": "~3.0.2"
+  },
+  "resolutions": {
+    "bourbon": "~3.2.0"
   }
 }

@@ -1,6 +1,23 @@
 @import "variables";
-body {
-  font-weight: 300;
-  background: $color;
-}
+@import "fonts";
+@import "globals";
+
+@import "../bower_components/bourbon/dist/bourbon";
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+@import "../bower_components/normalize-scss/normalize";
+
+@import "bem/container";
+@import "bem/top-menu";
+@import "bem/jumboton";
+@import "bem/header";
+@import "bem/button";
+@import "bem/advantages";
+@import "bem/content";
+@import "bem/feature-list";
+@import "bem/pre-footer";
+@import "bem/footer";
+@import "bem/cover";
+@import "bem/layout";
+
+
 
